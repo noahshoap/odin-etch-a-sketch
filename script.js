@@ -26,7 +26,7 @@ function mouseEnter(event) {
 function buttonClicked(event) {
     let newSize = Number(prompt("What size do you want?"));
 
-    if (newSize < 0 || newSize > 100) {
+    if (newSize <= 0 || newSize > 100) {
         alert("Grid size must be between 1 and 100.");
         return;
     }
